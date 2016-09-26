@@ -13,6 +13,8 @@ case class Complex(real: Double = 0, imaginary: Double = 0) {
     Complex(newReal, newImaginary)
   }
 
+  def unary_- = Complex(-1) * this
+
   override def toString = 
     if (imaginary == 0) 
       s"${real}" 
