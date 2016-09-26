@@ -1,3 +1,3 @@
 package dsls.complex
 
-class Complex(val real: Double = 0, val imaginary: Double = 0)
+case class Complex(real: Double = 0, imaginary: Double = 0)
