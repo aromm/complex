@@ -28,4 +28,5 @@ case class Complex(real: Double = 0, imaginary: Double = 0) {
 // This is called a "companion object"
 object Complex {
   implicit def int2complex(i: Int): Complex = Complex(i)
+  object i extends Complex(0, 1)
 }
